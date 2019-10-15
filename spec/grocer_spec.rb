@@ -326,3 +326,8 @@ describe "Grocer" do
     end
   end
 end
+
+
+ def checkout 
+  do cart = [find_item('BEETS')] result = consolidate_cart(cart: cart)@@ -258,7 +258,7 @@ expect(self).to receive(:consolidate_cart).with(cart: cart).and_return(result) expect(checkout(cart: cart, coupons: [])).to eq(5.00) end end end
+ describe "coupons:" do
